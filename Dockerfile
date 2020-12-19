@@ -28,7 +28,7 @@ RUN apt-get update \
   apt-transport-https \
   curl \
   wget \
-  && rm -Rf /usr/share/doc/* /usr/share/man/* /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+  && rm -Rf /usr/share/doc/* /usr/share/man/* /tmp/* /var/tmp/* \
   && apt-get clean
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 
